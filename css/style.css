@@ -43,10 +43,12 @@ img {
 
 #downloadForm {
     max-width: 500px;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 2rem auto 0;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
+    background-color: #202739;
+    width: 80%;
     gap: 1rem;
 }
 
@@ -83,7 +85,7 @@ header img {
 }
 
 main>p {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 #teamList {
@@ -148,8 +150,17 @@ main>p {
 .Statistiques {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    gap: 150px;
+    background-color: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.Statistiques>div {
     background-color: #202739;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 .Statistiques h2 {
