@@ -13,9 +13,9 @@
 <body>
     <header>
 
-        <h1>Rapport écosystèmes digitaux de clubs de football romands</h1>
+        <h1>Découvrir les écosystèmes digitaux des clubs de football romands</h1>
 
-        <a href="img">imageici</a>
+        <img src="/img/image.png" alt="terrain de foot">
 
     </header>
     <main>
@@ -28,7 +28,14 @@
         <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
 
         <section id="teamList">
-            <h2>Liste des équipes</h2>
+            <div class="marquee">
+                <div class="marquee__strip">
+                    <!-- tous les <article>... injectés/présents ici -->
+                </div>
+                <div class="marquee__strip" aria-hidden="true">
+                    <!-- même contenu dupliqué -->
+                </div>
+            </div>
         </section>
 
         <section class="Statistiques">
