@@ -4,33 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rapport écosystèmes digitaux</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="src/main.js" type="module" defer></script>
 
 </head>
 
 <body>
-    <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
-    <h1 data-bind-global="count"></h1>
+    <header>
 
-    <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
-    <section id="teamList">
-    </section>
+        <h1>Rapport écosystèmes digitaux de clubs de football romands</h1>
 
-    <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
-    <div id="messageContainer"></div>
+        <a href="img">imageici</a>
 
-    <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
-    <form id="downloadForm">
-        <input type="text" name="lastName" placeholder="Nom">
-        <input type="text" name="firstName" placeholder="Prénom">
-        <input type="email" name="email" placeholder="Email">
-        <input type="checkbox" name="newsletterAgreement" id="consent">
-        <label for="consent">J'accepte de recevoir la newsletter</label>
-        <button type="submit">Télécharger</button>
-    </form>
+    </header>
+    <main>
+        <p>Vous trouverez un rapport complet de plus de 800 pages qui regroupe
+            l'analyse d'écosystèmes digitaux d'une vingtaine de clubs romands entre amateur,
+            semi pro et même club pro de Super League.</p>
 
+        <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
+
+        <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
+
+        <section id="teamList">
+            <h2>Liste des équipes</h2>
+        </section>
+
+        <section class="Statistiques">
+
+            <div>
+                <p data-bind-global="count"></p>
+                <p>Clubs de Suisse Romande analysés</p>
+            </div>
+
+            <div>
+                <p>68%</p>
+                <p>Des clubs possèdent une plateforme e-commerce</p>
+            </div>
+            <div>
+                <p>25'000</p>
+                <p>Nombre d'abonnés maximum sur Instagram pour un club</p>
+            </div>
+            <div>
+                <p>+ de 2</p>
+                <p>Clubs ayant remportés la Super League</p>
+            </div>
+        </section>
+
+        <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
+        <div id="messageContainer"></div>
+
+        <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
+        <form id="downloadForm">
+            <input type="text" name="lastName" placeholder="Nom">
+            <input type="text" name="firstName" placeholder="Prénom">
+            <input type="email" name="email" placeholder="Email">
+            <input type="checkbox" name="newsletterAgreement" id="consent">
+            <label for="consent">J'accepte de recevoir la newsletter</label>
+            <button type="submit">Télécharger</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact</p>
+        <p>Email: mirko.martone@hes-so.ch</p>
+        <p>Email: loris.bach@hes-so.ch</p>
+
+        <p>Liens utiles</p>
+        <a href="">Télécharger</a>
+
+
+    </footer>
 </body>
 
 </html>
