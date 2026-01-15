@@ -27,34 +27,27 @@
 
         <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
 
-        <section id="teamList">
-            <div class="marquee">
-                <div class="marquee__strip">
-                    <!-- tous les <article>... injectés/présents ici -->
-                </div>
-                <div class="marquee__strip" aria-hidden="true">
-                    <!-- même contenu dupliqué -->
-                </div>
-            </div>
+        <section id="scroll-team-logo">
+            <div id="teamList"></div>
         </section>
 
         <section class="Statistiques">
 
             <div>
-                <p data-bind-global="count"></p>
+                <h2 data-bind-global="count"></h2>
                 <p>Clubs de Suisse Romande analysés</p>
             </div>
 
             <div>
-                <p>68%</p>
+                <h2>68%</h2>
                 <p>Des clubs possèdent une plateforme e-commerce</p>
             </div>
             <div>
-                <p>25'000</p>
+                <h2>25'000</h2>
                 <p>Nombre d'abonnés maximum sur Instagram pour un club</p>
             </div>
             <div>
-                <p>+ de 2</p>
+                <h2>+ de 2</h2>
                 <p>Clubs ayant remportés la Super League</p>
             </div>
         </section>
@@ -73,14 +66,23 @@
         </form>
     </main>
 
-    <footer>
-        <p>Contact</p>
-        <p>Email: mirko.martone@hes-so.ch</p>
-        <p>Email: loris.bach@hes-so.ch</p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col contact">
+                <h3>Contact</h3>
+                <p>mirko.martone@hes-so.ch</p>
+                <p>loris.bach@hes-so.ch</p>
+            </div>
 
-        <p>Liens utiles</p>
-        <a href="">Télécharger</a>
+            <div class="footer-col links">
+                <h3>Liens utiles</h3>
+                <a href="">Télécharger</a>
+            </div>
+        </div>
 
+        <div class="footer-bottom">
+            © 2026 - Écosystèmes digitaux des clubs de football en Suisse Romande
+        </div>
 
     </footer>
 </body>
