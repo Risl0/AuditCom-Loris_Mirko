@@ -50,11 +50,13 @@ img {
     gap: 1rem;
 }
 
+header,
+main {
+    background-color: #121729;
 
-
+}
 
 * {
-    background-color: #121729;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -98,7 +100,6 @@ main>p {
 
     scrollbar-color: #519777 transparent;
     scrollbar-width: auto;
-
 }
 
 #teamList>article {
@@ -142,4 +143,83 @@ main>p {
 
 #teamList::-webkit-scrollbar-thumb:hover {
     background: #3e6d60;
+}
+
+.Statistiques {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    background-color: #202739;
+}
+
+.Statistiques h2 {
+    display: flex;
+    color: #00D492;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+.Statistiques p {}
+
+/* Footer pleine largeur + colonnes alignées */
+.site-footer {
+    width: 100%;
+    background: #006045;
+    padding: 2.5rem 1rem;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    /* largeur du contenu centré */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* Titres de colonnes alignés */
+.footer-col h3 {
+    margin: 0 0 0.6rem 0;
+    color: #121729;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Contenu des colonnes */
+.footer-col p,
+.footer-col a {
+    margin: 0.25rem 0;
+    color: #ddd;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Lien */
+.footer-col a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Ligne copyright centrée en bas, sur toute la largeur */
+.footer-bottom {
+    max-width: 1100px;
+    margin: 1.5rem auto 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+}
+
+/* Responsive: empiler en mobile */
+@media (max-width: 720px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .footer-bottom {
+        font-size: 0.9rem;
+        padding-top: 1rem;
+    }
 }
