@@ -35,19 +35,30 @@ img {
     padding: 2rem;
 }
 
+input[type="checkbox"] {
+    margin-right: 0.8rem;
+    cursor: pointer;
+    accent-color: #00D492;
+}
 
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.8rem;
+    justify-content: center;
+}
 
 #downloadForm {
-    max-width: 500px;
+    max-width: 800px;
     margin: 2rem auto 0;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     background-color: #202739;
-    width: 80%;
+    width: 90%;
     gap: 1rem;
     border-radius: 4%;
-
 }
 
 #downloadForm button[type="submit"] {
@@ -72,8 +83,46 @@ img {
 }
 
 input {
-
     border-radius: 5px;
+    background-color: #2a3a52;
+    color: #ffffff;
+    border: 1px solid #00D492;
+    padding: 0.8rem;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00D492;
+    box-shadow: 0 0 8px rgba(0, 212, 146, 0.3);
+}
+
+progress {
+    width: 80%;
+    max-width: 600px;
+    height: 8px;
+    margin: 2rem auto 1rem;
+    display: block;
+    border-radius: 10px;
+    background-color: #2a3a52;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #2a3a52;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #00D492;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #00D492;
+    border-radius: 10px;
 }
 
 header,
@@ -119,12 +168,11 @@ header img {
 }
 
 main {
-
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem;
 }
 
 main>p {
+    font-weight: bold;
     font-size: 24px;
 }
 
@@ -261,5 +309,63 @@ div#teamList img:hover {
     .footer-bottom {
         font-size: 0.9rem;
         padding-top: 1rem;
+    }
+
+    .Statistiques {
+        grid-template-columns: 1fr;
+        /* 1 sous l'autre */
+        gap: 1.25rem;
+        /* au lieu de 150px */
+        padding: 1.5rem 0.5rem;
+        max-width: 520px;
+        /* optionnel : plus joli en mobile */
+    }
+
+    .Statistiques>div {
+        width: 100%;
+    }
+
+    .Statistiques h2 {
+        font-size: 44px;
+        /* optionnel : un peu plus petit sur mobile */
+    }
+
+    header {
+        height: 700px;
+
+    }
+
+    header h1 {
+        display: block;
+        /* enlève le flex qui force la mise en page */
+        height: auto;
+        margin: 0;
+        padding: 1rem;
+        /* espace propre */
+        font-size: clamp(28px, 8.5vw, 56px);
+        line-height: 1.05;
+        word-break: normal;
+    }
+
+    main>p {
+        display: block;
+        font-size: 18px;
+    }
+
+    #teamList {
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-150%);
+        }
     }
 }

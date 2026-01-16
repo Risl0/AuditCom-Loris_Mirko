@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapport écosystèmes digitaux</title>
+    <link rel="icon" sizes="32x32" href="/img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="src/main.js" type="module" defer></script>
 
@@ -62,8 +63,11 @@
             <input type="text" name="lastName" placeholder="Nom">
             <input type="text" name="firstName" placeholder="Prénom">
             <input type="email" name="email" placeholder="Email">
-            <input type="checkbox" name="newsletterAgreement" id="consent">
-            <label for="consent">J'accepte de recevoir la newsletter</label>
+            <!-- <input type="checkbox" name="newsletterAgreement" id="consent"> -->
+            <label for="consent">
+                <input type="checkbox" name="newsletter">
+                J'accepte de recevoir la newsletter
+            </label>
             <button type="submit">Télécharger</button>
         </form>
     </main>
