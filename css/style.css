@@ -94,6 +94,10 @@ p {
     font-family: Helvetica, sans-serif;
 }
 
+main>p {
+    font-weight: bold;
+}
+
 header {
     height: 800px;
 
@@ -192,9 +196,10 @@ div#teamList img:hover {
     font-weight: 1000;
 }
 
-.Statistiques:hover {
+.Statistiques>div:hover {
     transform: scale(1.05);
     border-color: #00D492;
+    filter: drop-shadow(0 8px 16px rgba(0, 212, 146, 0.3));
 }
 
 /* Footer pleine largeur + colonnes alignées */
